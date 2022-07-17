@@ -18,7 +18,7 @@ async def echo(message: types.Message):
 
     if message.text.lower() == 'dice':
         a = await bot.send_dice(message.chat.id, emoji='🎲')
-        print(a.dice.value)
+        bot_dice = a.dice.value
 
 
 def register_handlers_extra(dp: Dispatcher):

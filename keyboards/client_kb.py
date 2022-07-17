@@ -16,3 +16,13 @@ start_markup.add(location_button, info_button)
 hi_button = KeyboardButton("/hi")
 hi_markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 hi_markup.add(hi_button)
+
+gender_g = KeyboardButton("Я девушка")
+gender_b = KeyboardButton("Я парень")
+gender_other = KeyboardButton("Я незнаю")
+gender_markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+gender_markup.row(gender_b, gender_g, gender_other)
+
+cancel_button = KeyboardButton("CANCEL")
+cancel_markup = ReplyKeyboardMarkup(resize_keyboard=True,
+                                    one_time_keyboard=True).add(cancel_button)
