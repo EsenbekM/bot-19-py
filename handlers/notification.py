@@ -20,7 +20,7 @@ async def wake_up():
 
 
 async def scheduler():
-    aioschedule.every().day.at("19:27").do(go_to_sleep)
+    aioschedule.every().monday.at("19:27").do(go_to_sleep)
     aioschedule.every().day.at("19:32").do(wake_up)
 
     while True:
